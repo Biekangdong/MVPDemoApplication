@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/met_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:hint="请输入用户名"
+        android:textSize="@dimen/text_size_main"
+        app:met_baseColor="@color/black"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelText="用户名"
+        app:met_primaryColor="@color/lighter_gray" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/met_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:hint="请输入密码"
+        android:textSize="@dimen/text_size_main"
+        app:met_baseColor="@color/black"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelText="密码"
+        app:met_primaryColor="@color/lighter_gray" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_main" />
+</LinearLayout>
